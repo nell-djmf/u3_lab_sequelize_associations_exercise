@@ -9,7 +9,7 @@ module.exports = {
         return {
           title: faker.lorem.sentence(),
           content: faker.lorem.paragraph(),
-          creator_id: user.id,
+          creatorId: user.id,
           createdAt: new Date(),
           updatedAt: new Date()
         }

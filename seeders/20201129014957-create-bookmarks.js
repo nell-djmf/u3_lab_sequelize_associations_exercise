@@ -10,8 +10,8 @@ module.exports = {
           raw: true
         })
         return {
-          user_id: user.id,
-          article_id: article.id,
+          userId: user.id,
+          articleId: article.id,
           createdAt: new Date(),
           updatedAt: new Date()
         }

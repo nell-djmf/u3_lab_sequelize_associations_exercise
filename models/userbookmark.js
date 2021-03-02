@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
   UserBookmark.init(
     {
       userId: {
-        field: 'user_id',
         type: DataTypes.INTEGER,
         references: {
           model: 'users',
@@ -22,7 +21,6 @@ module.exports = (sequelize, DataTypes) => {
         }
       },
       articleId: {
-        field: 'article_id',
         type: DataTypes.INTEGER,
         references: {
           model: 'articles',
