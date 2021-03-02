@@ -13,7 +13,7 @@
 
 ## Overview
 
-We'll be practicing associating the provided models. Foreign Keys have already been set up for you in the migrations. To confirm this open `psql` and connect to `associations_development`. Verify the schema is setup and the tables were created successfully. You'll only be working in the `User` and `Article` models. Utilizing the **[Resources Provided](#Resources)**, associate the provided models and eager load the associated data. You must have `3` passing tests for completion. Run `npm run test` to check your work.
+We'll be practicing associating the provided models. Foreign Keys have already been set up for you in the migrations. To confirm this open `psql` and connect to `associations_development`. Verify the schema is setup and the tables were created successfully. You'll only be working in the `User` and `Article` models. Utilizing the **[Resources Provided](#Resources)**, associate the provided models and eager load the associated data. You must have `3` passing tests for completion. Run `npm run test` to check your work. Write your queries in the provided `query.js` file.
 
 The associations are as follows:
 
