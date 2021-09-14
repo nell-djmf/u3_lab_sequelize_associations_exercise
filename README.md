@@ -26,7 +26,7 @@ The associations are as follows:
 
 ## Lab
 
-You'll need to setup the associations in the respective model in order for the queries to complete correctly. Run `npm run test` to check your work. If everything was done correctly all tests should pass.
+You'll need to setup the associations in the respective model in order for the queries to complete correctly. Run `npm run test` to check your work. If everything was done correctly 2 tests should pass. (3rd test is a bonus.)
 
 ## Resources
 
