@@ -19,6 +19,8 @@ The associations are as follows:
 
 - User has many Articles as creator
 - Article belongs to User as creator
+
+**BONUS**
 - User belongs to many Articles as bookmarks through UserBookmark
 - Article belongs to many User as bookmarks through UserBookmark
 
