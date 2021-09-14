@@ -13,7 +13,8 @@ const getAllUsers = async () => {
     return false
   }
 }
-const getAllBookmarks = async () => {
+
+const articlesWithCreator = async () => {
   try {
     // execute query here
     // Return the result
@@ -23,7 +24,8 @@ const getAllBookmarks = async () => {
   }
 }
 
-const articlesWithCreator = async () => {
+//Bonus
+const getAllBookmarks = async () => {
   try {
     // execute query here
     // Return the result
