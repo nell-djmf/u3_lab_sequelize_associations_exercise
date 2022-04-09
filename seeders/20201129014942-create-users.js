@@ -1,8 +1,8 @@
 'use strict'
-const faker = require('faker')
+const falso = require('@ngneat/falso')
 const users = [...Array(10)].map(() => ({
-  username: faker.internet.userName(),
-  email: faker.internet.email(),
+  username: falso.randUserName(),
+  email: falso.randEmail(),
   createdAt: new Date(),
   updatedAt: new Date()
 }))

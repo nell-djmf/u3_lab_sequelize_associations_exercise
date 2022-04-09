@@ -1,14 +1,14 @@
 'use strict'
 const { User, sequelize } = require('../models')
-const faker = require('faker')
+const falso = require('@ngneat/falso')
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const articles = await Promise.all(
       [...Array(20)].map(async () => {
         let user = await User.findOne({ order: sequelize.random(), raw: true })
         return {
-          title: faker.lorem.sentence(),
-          content: faker.lorem.paragraph(),
+          title: falso.randSentence(),
+          content: falso.randParagraph(),
           creatorId: user.id,
           createdAt: new Date(),
           updatedAt: new Date()
