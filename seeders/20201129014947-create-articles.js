@@ -7,7 +7,7 @@ module.exports = {
       [...Array(20)].map(async () => {
         let user = await User.findOne({ order: sequelize.random(), raw: true })
         return {
-          title: falso.randSentence(),
+          title: falso.randPhrase(),
           content: falso.randParagraph(),
           creatorId: user.id,
           createdAt: new Date(),
