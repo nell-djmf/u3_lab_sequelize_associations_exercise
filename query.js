@@ -6,8 +6,8 @@ function stringify(data) {
 
 const getAllUsers = async () => {
   try {
-    // execute query here
-    // Return the result
+    const getUsers = await User.findAll()
+    return getUsers
   } catch (error) {
     console.log(error)
     return false
@@ -16,8 +16,13 @@ const getAllUsers = async () => {
 
 const articlesWithCreator = async () => {
   try {
-    // execute query here
-    // Return the result
+    const getArticles = await Article.findAll({
+      include: {
+        model: User,
+        as: 'creator'
+      }
+    })
+    return getArticles
   } catch (error) {
     console.log(error)
     return false
@@ -27,8 +32,13 @@ const articlesWithCreator = async () => {
 //Bonus
 const getAllBookmarks = async () => {
   try {
-    // execute query here
-    // Return the result
+      const getBookmarks = await User.findAll({
+      include: {
+        model: Article,
+        as: 'bookmarks'
+      }
+    })
+    return getBookmarks
   } catch (error) {
     console.log(error)
     return false
